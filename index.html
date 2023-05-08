@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>    
+<style>
+    div { padding: 1rem;}
+    .world .capital {
+        color: teal;
+    }
+    .world > .country {color:  pink;}
+    /* .country:nth-of-type(1) + div {color: blue;} */
+/* 첫번째 country(South Korea) 인접한 country(England)한 자녀에게 색칠해줘. */
+    .country:nth-of-type(1) ~ div {color: purple;}
+</style>
+
+
+
+<body>
+    <div class="world">
+        World
+        <div class="country">
+            South Korea
+            <div class="capital">Seoul</div>
+        </div>
+        <div class="country">
+            England
+            <div class="capital">London</div>
+        </div>
+        <div class="country">
+            France
+            <div class="capital">Paris</div>
+        </div>
+    </div>
+</body>
+</html>
